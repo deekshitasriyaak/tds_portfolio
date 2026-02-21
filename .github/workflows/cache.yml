@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Create cache directory
+        run: mkdir -p ~/.cache
+
       - name: Cache dependencies
         id: cache-step
         uses: actions/cache@v4
